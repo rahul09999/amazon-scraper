@@ -121,7 +121,7 @@ async function callScraper(keyword){
               );
             
             await page1.goto(`${URL.web}${href}`);
-            await (3000);
+            await delay (3000);
 
             const title = await page1.$eval(selectors.titleId, element => element.innerText);
             // console.log(title);
